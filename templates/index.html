@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Print Website</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Print Job Management</h1>
+        <div id="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="client-id" placeholder="Client ID">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="main-container" style="display: none;">
+            <h2>Printers</h2>
+            <div id="printers-list"></div>
+            <h2>Send Print Job</h2>
+            <form id="print-form">
+                <select id="printer-select"></select>
+                <input type="text" id="file-url" placeholder="PDF File URL">
+                <input type="number" id="copies" value="1" min="1">
+                <button type="submit">Print</button>
+            </form>
+        </div>
+        <div id="status-container">
+            <h2>Status</h2>
+            <div id="status-messages"></div>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

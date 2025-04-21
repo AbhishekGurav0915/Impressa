@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+sqlalchemy
+databases
+aiosqlite
+websockets
+python-dotenv
+PyJWT
+pydantic
+jinja2
+python-jose[cryptography]
+passlib
+
